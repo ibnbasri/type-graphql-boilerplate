@@ -1,10 +1,9 @@
-import "reflect-metadata";
-import { ApolloServer } from "apollo-server";
-import { genSchema } from "./utils/generateSchema"
+import 'reflect-metadata';
+import { ApolloServer } from 'apollo-server';
+import { genSchema } from './utils/generateSchema';
 
 async function bootstrap() {
-
-  const schema = await genSchema() as any;
+  const schema = (await genSchema()) as any;
 
   const server = new ApolloServer({
     schema,

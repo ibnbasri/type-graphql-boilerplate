@@ -1,5 +1,4 @@
-import { ObjectType } from "type-graphql";
+import { ObjectType } from 'type-graphql';
 
 @ObjectType()
-export class IUsers {
-}
+export class IUsers {}
